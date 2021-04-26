@@ -1,0 +1,26 @@
+Bundle-Name: consumer-service-api
+Bundle-SymbolicName: com.posadas.consumer
+Bundle-Version: 1.0.0
+
+ Export-Package:\
+	com.posadas.consumer.api,\
+	com.posadas.consumer.api.model,\
+	com.posadas.consumer.api.model.*,\
+	com.posadas.consumer.api.model.base,\
+	com.posadas.consumer.api.model.base.*,\
+-check: EXPORTS
+
+
+
+Include-Resource:\
+  lib/gson.jar=gson-2.8.6.jar,\
+  lib/json.jar=json-20090211.jar,\
+  
+   Conditional-Package: \
+  org.json.simple.*,\
+  com.google.*
+  org.springframework.*
+  org.springframework.context.annotation.*
+  com.liferay.portal.*
+  org.springframework.beans.factory.annotation.*
+  org.apache.commons.* 
