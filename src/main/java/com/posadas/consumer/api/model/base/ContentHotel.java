@@ -41,7 +41,7 @@ public class ContentHotel {
 	public telephones telephones;
 	
 	@XmlElement(name = "description")
-	public description description;
+	public String description;
 	
 	@XmlElement(name = "language")
 	public String language;
@@ -140,11 +140,11 @@ public class ContentHotel {
 		this.telephones = telephones;
 	}
 
-	public description getDescription() {
+	public String getDescription() {
 		return description;
 	}
 
-	public void setDescription(description description) {
+	public void setDescription(String description) {
 		this.description = description;
 	}
 
@@ -152,6 +152,7 @@ public class ContentHotel {
 		return language;
 	}
 
+	
 	public void setLanguage(String language) {
 		this.language = language;
 	}
