@@ -47,7 +47,7 @@ public class ContentHotel {
 	public String language;
 	
 	@XmlElement(name = "shortDescription")
-	public shortDescription shortDescription;
+	public String shortDescription;
 	
 	@XmlElement(name = "title")
 	public String title;
@@ -157,11 +157,11 @@ public class ContentHotel {
 		this.language = language;
 	}
 
-	public shortDescription getShortDescription() {
+	public String getShortDescription() {
 		return shortDescription;
 	}
 
-	public void setShortDescription(shortDescription shortDescription) {
+	public void setShortDescription(String shortDescription) {
 		this.shortDescription = shortDescription;
 	}
 
